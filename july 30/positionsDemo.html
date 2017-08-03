@@ -1,0 +1,36 @@
+<html>
+
+	<head>
+		<style>
+			/*media query*/
+			@media only screen and (max-width: 500px) {
+			    .outerDiv {
+			        background-color: lightblue;
+			    }
+			}
+			@media only screen and (min-width: 500px) {
+			    .outerDiv {
+			        background: #799e7f;
+			    }
+			}		
+		</style>
+
+		<script>
+			var clickme = function() {
+				alert("hello world");
+			}
+		</script>
+	</head>
+	<div style=" position: fixed; color: black; height:50px; z-index: 7; width: 100%; background: grey; top: 0px; text-align: center; font-size: 40px">	        HEADER IS FIXED
+	</div>
+	<div class = "outerDiv" style = " width: 100%; height: 2000px; position: relative; margin-top: 50px;">
+		<div style = "height: 250px; width: 183px; background: yellow; position: relative; top: 20px; left: 50px; z-index: 7;">
+			<div style = "    width: 108px; height: 100px; background: #823e3e; z-index: 5; position: absolute; top: 20px;left: 20px; color: white; font-size: 19px; font-weight: 800;">
+				ABSOLUTE
+			</div>
+		</div>
+	</div>
+	<button style = "width: 200px; background: red; color: white;" onclick = "clickme()">
+		clickme
+	</button>
+</html>
